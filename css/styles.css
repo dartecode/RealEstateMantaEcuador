@@ -384,6 +384,11 @@ background: #71b100;
     align-items: center;
     margin: auto;
 }
+.mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /** Contacto **/
 .contacto p {
     font-size: 1.4rem;
