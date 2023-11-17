@@ -46,35 +46,32 @@
     <main class="contenedor seccion contenido-centrado">
       <h2 class="fw-300 centrar-texto">Llena el Formulario de contacto</h2>
 
-      <form action="" class="contacto">
+      <form action="https://formsubmit.co/dariovaldezc21@gmail.com" method="POST" class="contacto">
         <fieldset>
           <legend>Información Personal</legend>
 
           <label for="nombre">Nombre:</label>
-          <input type="text" placeholder="Tu Nombre" id="nombre" />
+          <input type="text" placeholder="Tu Nombre" name="Nombre" id="nombre" />
 
           <label for="email">Email:</label>
-          <input type="email" placeholder="Tu correo electrónico" id="email" />
+          <input type="email" placeholder="Tu correo electrónico" name="Correo" id="email" />
 
           <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" placeholder="0000000000" />
+          <input type="tel" id="telefono" name="Telefono" placeholder="0987654321" />
 
           <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje"></textarea>
+          <textarea id="mensaje" name="Mensaje"></textarea>
         </fieldset>
 
         <fieldset>
           <legend>Información sobre Propiedad</legend>
 
           <label for="opciones">Venta o Compra</label>
-          <select id="opciones">
+          <select id="opciones" name="CompraOVenta">
             <option value="" disabled selected>--Seleccione--</option>
             <option value="compra">Compra</option>
             <option value="venta">Venta</option>
           </select>
-
-          <label for="cantidad">Cantidad:</label>
-          <input type="number" id="cantidad" min="0" />
         </fieldset>
 
         <!-- #region 
@@ -110,7 +107,7 @@
           <a href="anuncios.html">Anuncio</a>
           <a href="contacto.html">Contacto</a>
         </nav>
-        <p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+        <p class="copyright">Todos los derechos reservados 2023 &copy;</p>
       </div>
     </footer>
   </body>
