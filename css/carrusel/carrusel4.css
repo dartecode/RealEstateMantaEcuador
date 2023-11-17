@@ -51,7 +51,7 @@ li {
 }
 
 .carrousel {
-  width: 65%;
+  width: 50%;
   max-width: 120em;
   padding: 2em;
   color: var(--negro);
