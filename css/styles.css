@@ -121,7 +121,6 @@ background: #71b100;
         display: flex;
         justify-content: space-between;
         align-items: center;
-      
     }
 }
 
@@ -224,7 +223,6 @@ background: #71b100;
 .icono-caracteristicas li{
     flex:1;
     display: flex;
-    
 }
 .icono-caracteristicas li img{
     margin-right: 2rem;
@@ -240,7 +238,6 @@ background: #71b100;
     height: 40rem;
     display: flex;
     align-items: center;
-    
 }
 .contenido-contacto{
     flex: 0 0 95%;

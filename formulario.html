@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="./css/Casa.css" media="screen">
+    <script class="u-script" type="text/javascript" src="./js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="./js/nicepage.js" defer=""></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agregar Propiedad</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+    <body>
+        <header class="site-header">
+    <div class="contenedor contenido-header">
+        <div class="barra">
+            <a href="index.html">
+              <img src="./img/RealEstateManta.png" alt=" LogoTipo Bienes raices">
+            </a>
+            <div class="mobile-menu">
+                <a href="#navegacion">
+                    <img src="img/barras.svg" alt="icono menu">
+                </a>
+            </div>
+
+            <nav id="navegacion" class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncio</a>
+                    <a href="contacto.html">Contacto</a>
+            </nav> 
+        </div> <!--Termino barra-->      
+
+    </div> <!--Final Contenedor-->
+     </header>
+
+    <h1 class="fw-300 centrar-texto">Agregar Propiedad</h1>
+
+    <section class="u-align-center u-clearfix u-section-1" id="carousel_ca64">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+              <div class="u-layout-row">
+                <div class="u-align-center u-container-style u-grey-5 u-layout-cell u-size-22 u-layout-cell-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <div class="u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="720" data-image-height="1080"></div>
+                  </div>
+                </div>
+                <div class="u-align-center u-bottom-right-radius-50 u-container-style u-layout-cell u-palette-3-base u-shape-round u-size-38 u-top-right-radius-50 u-layout-cell-2">
+                  <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-2">
+                    <div class="u-form u-form-1">
+                      <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0;" source="email" name="form">
+                       
+                       
+                        <div class="u-form-group u-form-name u-form-group-1">
+                          <label for="name-f2a8" class="u-label u-label-1">Propiedad</label>
+                          <input type="text" placeholder="Ejemplo: casa con alberca" id="name-f2a8" name="Nombre" class="u-input u-input-rectangle u-input-1" required="">
+                        </div>
+
+                        <div class="u-form-group u-form-message u-form-group-4">
+                            <label for="message-f2a8" class="u-label u-label-4">Dirección</label>
+                            <textarea placeholder="Ingrese Dirección" rows="4" cols="50" id="message-f2a8" name="Dirección" class="u-input u-input-rectangle u-input-4" required=""></textarea>
+                        </div>
+
+                        <div class="u-form-group  u-form-group-2">
+                            <label for="name-f2a8" class="u-label u-label-1">Características</label>
+
+                            <div >
+                            <div class="columna">
+                                <label for="baño-f2a8" class="u-label u-label-1">Baños</label>
+                                <input   id="baño-f2a8" placeholder="0" name="Baños" type="number" min="0" max="10" step="0" class="u-input u-input-rectangle u-input-2" required="">
+                                </input>
+                            </div>
+                            <div class="columna"> 
+                                <label for="habitaciones-f2a8" class="u-label u-label-1">Habitaciones</label>
+                                <input   id="habitaciones-f2a8" placeholder="0" name="Habitaciones" type="number" min="0" max="10" step="0" class="u-input u-input-rectangle u-input-2" required="">
+                                </input>
+                            </div>  
+                            <div class="columna">
+                                <label for="garaje-f2a8" class="u-label u-label-1">Garaje</label>
+                                <input   id="garaje-f2a8" placeholder="0" name="Garaje" type="number" min="0" max="10" step="0" class="u-input u-input-rectangle u-input-2" required="">
+                                </input>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="u-form-group u-form-phone u-form-group-3">
+                            <label for="phone-447e" class="u-label u-label-3">Precio (Dolares $)</label>
+                            <input type="tel" placeholder="(Eje: 1.000)" id="phone-447e" name="Precio" class="u-input u-input-rectangle u-input-3" required="">
+                          </div>
+
+                          <div class="u-form-group u-form-image u-form-group-1">
+                            
+                                <label method="post" action="/send/" enctype="multipart/form-data" for="image" class="u-label u-label-3">Selecciona varias fotos para agregar:</label>
+                                <input type="file" id="image" name="Fotos" accept="image/*" multiple required="">
+                         
+
+                          </div>
+
+                        <div class="u-form-group u-form-phone u-form-group-3">
+                          <label for="phone1-447e" class="u-label u-label-3">Teléfono</label>
+                          <input type="tel" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="(Eje: +593 95 687 4542)" id="phone1-447e" name="Teléfono" class="u-input u-input-rectangle u-input-3" required="">
+                        </div>
+                        
+                        <div class="u-align-left u-form-group u-form-submit u-form-group-5">
+                          <a href="#" class="u-border-none u-btn u-btn-rectangle u-btn-submit u-button-style u-white u-btn-1">Agregar</a>
+                          <input type="submit" value="submit" class="u-form-control-hidden">
+                        </div>
+                        <div class="u-form-send-message u-form-send-success"> Gracias Por Comnicarse con nosotros. </div>
+                        <div class="u-form-send-error u-form-send-message"> No se estableció conexión, intente nuevamente. </div>
+                        <input type="hidden" value="" name="recaptchaResponse">
+                        <input type="hidden" name="formServices" value="37a2349d-7211-43a8-1579-fe7aaff3a2e6">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncio</a>
+                    <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos los derechos reservados 2023 &copy;</p>
+        </div>
+    </footer>
+        
+    </body>
+</html>
