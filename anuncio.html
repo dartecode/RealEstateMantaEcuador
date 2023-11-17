@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/carrusel.css">
+    <script defer src="./js/app.js" ></script>
 </head>
     <body>
         <header class="site-header">
@@ -33,24 +35,39 @@
      </header>
 
      <h1 class="fw-300 centrar-texto">Casa en venta</h1>
-     
-        <img src="./img/anuncio1.jpg" alt="Imagen Anuncio" class="imagen-anuncio"> 
+     <div class="carru">
+        <div class="carrousel">
+            <div class="grande">
+                <img src="img/propiedad1/habitacion.jpg" alt="Imagen 1" class="img">
+                <img src="img/propiedad1/habitacion2.jpg" alt="Imagen 2" class="img">
+                <img src="img/propiedad1/cocina.jpg" alt="Imagen 3" class="img">
+                <img src="img/propiedad1/patio.jpg" alt="Imagen 4" class="img">
+                <!--para agregar o quitar elemento del carrusel modificar: carrusel.css -casousel.grande width +100/-100 -carrousel.img width(+1/-1) js: position(calcular ej 1/4: *0.25*)-->
+            </div>
 
+            <ul class="puntos">
+                <li class="car punto activo"></li>
+                <li class="car punto"></li>
+                <li class="car punto"></li>
+                <li class="car punto"></li>
+            </ul>
+        </div> 
+    </div>
      <main class="contenedor seccion contenido-centrado">
         <div class="resumen-propiedad">
             <p class="precio">$100.000</p>
             <ul class="icono-caracteristicas">
                 <li>
                     <img src="img/icono_wc.svg" alt="">
-                    <p>NA</p>
+                    <p>2</p>
                 </li>
                 <li>
                     <img src="img/icono_dormitorio.svg" alt="">
-                    <p>NA</p>
+                    <p>2</p>
                 </li>
                 <li>
                     <img src="img/icono_estacionamiento.svg" alt="">
-                    <p>NA</p>
+                    <p>1</p>
                 </li>
             </ul>
         </div> <!--resumen-propiedad-->
@@ -71,9 +88,7 @@
 
      <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7978.312319490808!2d-80.6570331050047!3d-1.0438755940429258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be54a230ce37d%3A0x4e20be97f698b2e5!2sEstadio%20Montecristi!5e0!3m2!1ses!2sec!4v1700227199553!5m2!1ses!2sec" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <br>
+    </div><br><br>
 
 
     <footer class="site-footer seccion">
