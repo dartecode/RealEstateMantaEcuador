@@ -71,9 +71,7 @@ li {
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 1em;
-  background-color: var(--blanco);
-  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  padding: 2em;
+   padding: 2em;
   transition: all 0.5s ease;
   transform: translateX(0%);
 }
@@ -84,7 +82,6 @@ li {
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 1em;
-  background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 
@@ -105,7 +102,7 @@ li {
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 1em;
-  background-color: var(--blanco);
+  background-color: #333333;
   box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 
