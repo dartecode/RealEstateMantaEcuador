@@ -53,6 +53,7 @@ li {
 }
 
 .carrousel {
+  max-height: 720px;
   width: 50%;
   max-width: 120em;
   padding: 2em;
@@ -79,6 +80,7 @@ li {
 }
 
 .carrousel .img {
+  max-height: 540px;
   width: calc( 100% / 5 - 5em);
   min-height: 10vh;
   color: var(--negro);
