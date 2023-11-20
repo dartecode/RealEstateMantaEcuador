@@ -86,14 +86,12 @@ background: #71b100;
     background-color: #333333;
     padding: 1rem 0 3rem 0;
 }
-
 .site-header.inicio{
     background-image: url(../img/header.jpg);
     background-position: center center;
     background-size: cover;
     height: 100vh;
     min-height: 60rem;
-
 }
 .contenido-header{
     height: 100%;
@@ -106,6 +104,9 @@ background: #71b100;
     .contenido-header{
         text-align: left;
     }
+}
+.contenido-header img{
+     height: 175px;
 }
 .contenido-header h1{
     color: white;
@@ -123,6 +124,8 @@ background: #71b100;
         align-items: center;
     }
 }
+
+
 
 /* Navegacion */
 .navegacion a{
