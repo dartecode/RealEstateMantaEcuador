@@ -213,12 +213,13 @@ background: #71b100;
     margin:0;
 }
 .precio{
+    margin-left: 45px;
     color: #71b100;
     font-weight: 700;
 }
 .icono-caracteristicas{
     list-style: none;
-    padding: 0;
+    padding: 10px;
     display: flex;
     max-width: 50rem;
     flex: 1;
@@ -431,4 +432,7 @@ textarea{
  display: flex;
  justify-content: space-between;
  align-items: center;
+}
+.description{
+    margin-left: 45px;
 }

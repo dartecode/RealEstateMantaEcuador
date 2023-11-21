@@ -111,3 +111,9 @@ li {
 .carrousel .punto.activo {
   background-color: lightblue;
 }
+
+@media (max-width: 540px) {
+  .carrousel{
+    width: 100%;
+  }
+}

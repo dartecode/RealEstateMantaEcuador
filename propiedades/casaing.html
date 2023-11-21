@@ -9,38 +9,38 @@
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/carrusel.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/carrusel/carrusel4.css" />
     <link rel="icon" href="img/White Modern Real Estate Logo.png" />
-    <script defer src="./js/app.js"></script>
-
     <link rel="stylesheet" href="../css/social.css" />
     <script
       src="https://kit.fontawesome.com/eb496ab1a0.js"
       crossorigin="anonymous"
     ></script>
+
+    <script defer src="../js/carrusel/app4.js"></script>
   </head>
   <body>
     <header class="site-header">
       <div class="contenedor contenido-header">
         <div class="barra">
-          <a href="index.html">
+          <a href="../index.html">
             <img
-              src="./img/Real Estate Logo.png"
+              src="../img/Real Estate Logo.png"
               alt=" LogoTipo Bienes raices"
             />
           </a>
           <div class="mobile-menu">
             <a href="#navegacion">
-              <img sr c="img/barras.svg" alt="icono menu" />
+              <img src="../img/barras.svg" alt="icono menu" />
             </a>
           </div>
 
           <nav id="navegacion" class="navegacion">
-            <a href="nosotros.html">Nosotros</a>
-            <a href="propiedades.html">Propiedades</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="../nosotros.html">Nosotros</a>
+            <a href="../propiedades.html">Propiedades</a>
+            <a href="../contacto.html">Contacto</a>
           </nav>
         </div>
         <!--Termino barra-->
@@ -52,14 +52,11 @@
     <div class="carru">
       <div class="carrousel">
         <div class="grande">
-          <img src="img/propiedad1/habitacion.jpg" alt="Imagen 1" class="img" />
-          <img
-            src="img/propiedad1/habitacion2.jpg"
-            alt="Imagen 2"
-            class="img"
-          />
-          <img src="img/propiedad1/cocina.jpg" alt="Imagen 3" class="img" />
-          <img src="img/propiedad1/patio.jpg" alt="Imagen 4" class="img" />
+          <img src="../img/casaing/frente.jpg" alt="Imagen 1" class="img" />
+          <img src="../img/casaing/dentro.jpg" alt="Imagen 2" class="img" />
+          <img src="../img/casaing/dormitorio.jpg" alt="Imagen 3" class="img" />
+          <img src="../img/casaing/baño.jpg" alt="Imagen 4" class="img" />
+
           <!--para agregar o quitar elemento del carrusel modificar: carrusel.css -casousel.grande width +100/-100 -carrousel.img width(+1/-1) js: position(calcular ej 1/4: *0.25*)-->
         </div>
 
@@ -71,50 +68,45 @@
         </ul>
       </div>
     </div>
-
     <main class="contenedor seccion contenido-centrado">
       <div class="resumen-propiedad">
-        <p class="precio">$100.000</p>
+        <p class="precio">$180.000</p>
         <ul class="icono-caracteristicas">
           <li>
-            <img src="img/icono_wc.svg" alt="" />
+            <img src="../img/icono_wc.svg" alt="" />
+            <p>3</p>
+          </li>
+          <li>
+            <img src="../img/icono_dormitorio.svg" alt="" />
             <p>2</p>
           </li>
           <li>
-            <img src="img/icono_dormitorio.svg" alt="" />
-            <p>2</p>
-          </li>
-          <li>
-            <img src="img/icono_estacionamiento.svg" alt="" />
+            <img src="../img/icono_estacionamiento.svg" alt="" />
             <p>1</p>
           </li>
         </ul>
       </div>
       <!--resumen-propiedad-->
-      <p>
-        In mattis, eros ut finibus ultricies, lorem ligula euismod nibh, finibus
-        fringilla neque sapien eget eros. Nam consectetur tristique nunc, in
-        maximus ex dignissim at. Etiam tempor nunc a eros tincidunt, ac posuere
-        erat elementum. Maecenas eleifend volutpat auctor. Sed libero odio,
-        efficitur at malesuada eget, tempus id neque. Pellentesque turpis risus,
-        mollis et turpis eget, sagittis venenatis mi. Nunc laoreet auctor metus.
-        Integer luctus varius nunc id consectetur.
-      </p>
-      <p>
-        Integer faucibus non dui id pretium. Fusce semper suscipit dui, quis
-        accumsan dolor posuere vitae. Vivamus molestie porttitor justo, a
-        aliquam mi finibus eget. Curabitur eu faucibus diam, at rutrum urna.
-        Etiam iaculis massa et eros blandit feugiat. Ut pharetra, erat nec
-        suscipit elementum, s ex commodo ipsum, quis finibus nunc tortor a enim.
-        Etiam eleifend felis a erat egestas maximus.
-      </p>
+      <div class="description">
+        <p>Ubicación: Urbanización Manta Azul</p>
+        <p>
+          👇 Cuenta con: <br />
+          👉 2 habitaciones máster <br />
+          👉 3 baños <br />
+          👉 Sala <br />
+          👉 Comedor <br />
+          👉 Cocina <br />
+          👉 Patio <br />
+          👉 Garaje <br /><br />
+        </p>
+      </div>
     </main>
 
     <div class="mapa">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7978.312319490808!2d-80.6570331050047!3d-1.0438755940429258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be54a230ce37d%3A0x4e20be97f698b2e5!2sEstadio%20Montecristi!5e0!3m2!1ses!2sec!4v1700227199553!5m2!1ses!2sec"
-        width="800"
-        height="600"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2566508758987!2d-80.77007632595628!3d-0.9614054353554142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be182bdd71ecf%3A0x9dd99c1f5bc0ca74!2sUrbanizaci%C3%B3n%20Manta%20Azul!5e0!3m2!1ses-419!2sec!4v1700576807090!5m2!1ses-419!2sec"
+        width="600"
+        height="450"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
@@ -168,9 +160,9 @@
     <footer class="site-footer seccion">
       <div class="contenedor contenedor-footer">
         <nav class="navegacion">
-          <a href="nosotros.html">Nosotros</a>
-          <a href="propiedades.html">Propiedades</a>
-          <a href="contacto.html">Contacto</a>
+          <a href="../nosotros.html">Nosotros</a>
+          <a href="../propiedades.html">Propiedades</a>
+          <a href="../contacto.html">Contacto</a>
         </nav>
         <p class="copyright">Todos los derechos reservados 2023 &copy;</p>
       </div>
