@@ -77,9 +77,14 @@ flex:0 0 100%;
 }
 .boton-amarillo{
 background: #E08709;
+border-radius: 10px;
+max-width: max-content;
+margin: 1rem;
 }
 .boton-verde{
 background: #71b100;
+border-radius: 10px;
+max-width: max-content;
 }
 /* Header */
 .site-header{
@@ -436,4 +441,9 @@ textarea{
 }
 .description{
     margin-left: 45px;
+}
+.rede{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
