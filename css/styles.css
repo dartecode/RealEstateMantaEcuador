@@ -88,7 +88,7 @@ max-width: max-content;
 }
 /* Header */
 .site-header{
-    background-color: #333333;
+    background-color: #000000;
     padding: 1rem 0 3rem 0;
 }
 /*
@@ -112,7 +112,7 @@ max-width: max-content;
     }
 }
 .contenido-header img{
-     height: 230px;
+     height: 150px;
 }
 .contenido-header h1{
     color: white;
@@ -336,7 +336,7 @@ max-width: max-content;
 }
 /**Footer **/
 .site-footer{
-    background-color: #333333;
+    background-color: #000000;
     margin: 0;
 }
 
