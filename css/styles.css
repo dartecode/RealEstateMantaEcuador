@@ -112,7 +112,7 @@ max-width: max-content;
     }
 }
 .contenido-header img{
-     height: 300px;
+     height: 320px;
 }
 .contenido-header h1{
     color: white;
@@ -163,7 +163,7 @@ max-width: max-content;
     }
 }
 .navegacion:target{
-    display: block;
+    display: none;
 }
 .navegacion{
     display: none;
