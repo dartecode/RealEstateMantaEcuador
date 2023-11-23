@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
 html{
     box-sizing: border-box;
     font-size: 62.5%; /*Reset para Rems */
@@ -92,14 +98,7 @@ margin: 1rem;
     background-color: #000000;
     padding: 1rem 0 3rem 0;
 }
-/*
-.site-header.inicio{
-    background-image: url(../img/header.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    min-height: 60rem;
-}*/
+
 .contenido-header{
     height: 100%;
     display: flex;
@@ -113,7 +112,8 @@ margin: 1rem;
     }
 }
 .contenido-header img{
-     height: 320px;
+    margin-left: 10px;
+     height: 100px;
 }
 .contenido-header h1{
     color: white;
@@ -121,60 +121,79 @@ margin: 1rem;
     max-width: 60rem;
     line-height: 2;
 }
-.barra{
-    padding-top: 3rem;
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
 }
-@media(min-width:768px){
-    .barra{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
 
-
-
-/* Navegacion */
-.navegacion a{
-    color: white;
-    text-decoration: none;
-    font-size: 2.3rem;
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ececec;
     display: block;
+    font-weight: bold;
 }
-@media(min-width:768px){
-    .navegacion a{
-        display: inline-block;
-        margin-right: 2rem;
-        font-size: 1.8rem;
-    }
-    .navegacion a:last-of-type{
-        margin-right: 0px;
-    }
+.menu .navbar ul li a:hover {
+    color: #ffffff;
 }
-.navegacion a:hover{
-    color:#71b100;
-}
-/**Mobile menu **/
-.mobile-menu img{
-    width: 5rem;
-}
-@media(min-width:768px){
-    .mobile-menu{
-        display: none;
-    }
-}
-.navegacion:target{
-    display: block;
-}
-.navegacion{
+
+#menu {
     display: none;
 }
-@media(min-width:768px){
-    .navegacion{
-        display: block;
-    }
+
+.menu-icono {
+    width: 25px;
 }
 
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:720px) {
+
+    .content {
+        min-height: 70px;
+    }
+
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    
+}
 /*Iconos nostros */
 @media(min-width:768px){
     .iconos-nosotros {
