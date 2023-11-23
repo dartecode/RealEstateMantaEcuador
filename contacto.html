@@ -13,19 +13,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="img/White Modern Real Estate Logo.png" />
 
-    <link rel="stylesheet" href="css/social.css"/>
+    <link rel="stylesheet" href="css/social.css" />
     <script
       src="https://kit.fontawesome.com/eb496ab1a0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="js/contacto.js"
+      defer=""
+    ></script>
   </head>
   <body>
-   
     <header class="site-header inicio">
       <div class="contenido-header">
         <div class="menu container">
-          <a href="index.html"> 
-            <img src="img/Real Estate Logo.png" alt="Logotipo Bienes Raice">
+          <a href="index.html">
+            <img src="img/Real Estate Logo.png" alt="Logotipo Bienes Raice" />
           </a>
           <input type="checkbox" id="menu" />
           <label for="menu">
@@ -33,31 +39,32 @@
           </label>
           <nav class="navbar">
             <ul>
+              <li><a href="index.html">Inicio</a></li>
               <li><a href="nosotros.html">Nosotros</a></li>
               <li><a href="propiedades.html">Propiedades</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
           </nav>
-        </div> <br><br><br>
+        </div>
+        <br /><br /><br />
       </div>
     </header>
-
+    
     <main class="contenedor seccion contenido-centrado">
-      <h2 class="fw-300 centrar-texto">Si desea realizar una cita con nosotros, por favor llene el formulario de contacto.</h2>
+      <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
 
       <form
         action="https://formsubmit.co/hailiegus211@hotmail.com"
         method="POST"
         class="contacto"
       >
-
         <fieldset>
           <legend>Información Personal</legend>
 
           <label for="nombre">Nombre:</label>
           <input
             type="text"
-            placeholder="Su nombre"
+            placeholder="Su Nombre"
             name="Nombre"
             id="nombre"
           />
@@ -75,25 +82,47 @@
             type="tel"
             id="telefono"
             name="Telefono"
-            placeholder="09........"
+            placeholder="Su numero de telefono"
           />
 
           <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="Mensaje"></textarea>
+          <textarea
+            id="mensaje"
+            name="Mensaje"
+            placeholder="Escriba su mensaje"
+          ></textarea>
         </fieldset>
 
         <fieldset>
           <legend>Información sobre Propiedad</legend>
+
           <label for="opciones">Venta o Compra</label>
-          <select id="opciones" name="CompraOVenta">
+          <select id="opciones" name="opciones">
             <option value="" disabled selected>--Seleccione--</option>
             <option value="compra">Compra</option>
             <option value="venta">Venta</option>
           </select>
+
+          <label for="codigo">Código de propiedad</label>
+          <input
+            type="text"
+            placeholder="Ingrese código"
+            name="codigo"
+            id="codigo"
+            disabled="disabled"
+          />
+
+          <label for="opcionesA">Asesora</label>
+          <select id="opcionesA" name="opcionesA" disabled="disabled">
+            <option value="" disabled selected>--Seleccione--</option>
+            <option value="Denisse Arteaga">
+              Denisse Arteaga - 0994658800
+            </option>
+            <option value="Laura García">Laura García - 0995348848</option>
+          </select>
         </fieldset>
 
         <input type="submit" value="Enviar" class="boton boton-verde" />
-
       </form>
     </main>
 
