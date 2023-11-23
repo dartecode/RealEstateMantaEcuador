@@ -492,9 +492,19 @@ textarea{
     text-decoration: none;
     color: antiquewhite;
 }
+
 .inf{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+}
+
+.info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info1{
+    margin-right: 3rem;
 }
