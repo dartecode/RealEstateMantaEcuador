@@ -112,7 +112,7 @@ li {
   background-color: lightblue;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .carrousel{
     width: 100%;
   }
