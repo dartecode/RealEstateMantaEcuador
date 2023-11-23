@@ -494,12 +494,14 @@ textarea{
 }
 
 .inf{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .info{
+    margin-left: 20px;
     position: relative;
     display: flex;
     align-items: center;
