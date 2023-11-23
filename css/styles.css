@@ -474,3 +474,9 @@ textarea{
     text-decoration: none;
     color: antiquewhite;
 }
+.inf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
