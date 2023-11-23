@@ -42,26 +42,22 @@
       </div>
     </header>
 
-    <!-- #region 
-        <h1 class="fw-300 centrar-texto">Contacto</h1>
-        <img src="img/destacada3.jpg" alt="Imagen Contacto">
-    -->
-
     <main class="contenedor seccion contenido-centrado">
-      <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
+      <h2 class="fw-300 centrar-texto">Si desea realizar una cita con nosotros, por favor llene el formulario de contacto.</h2>
 
       <form
         action="https://formsubmit.co/hailiegus211@hotmail.com"
         method="POST"
         class="contacto"
       >
+
         <fieldset>
           <legend>Información Personal</legend>
 
           <label for="nombre">Nombre:</label>
           <input
             type="text"
-            placeholder="Nombre"
+            placeholder="Su nombre"
             name="Nombre"
             id="nombre"
           />
@@ -69,7 +65,7 @@
           <label for="email">Email:</label>
           <input
             type="email"
-            placeholder="Correo electrónico"
+            placeholder="Su correo electrónico"
             name="Correo"
             id="email"
           />
@@ -88,7 +84,6 @@
 
         <fieldset>
           <legend>Información sobre Propiedad</legend>
-
           <label for="opciones">Venta o Compra</label>
           <select id="opciones" name="CompraOVenta">
             <option value="" disabled selected>--Seleccione--</option>
@@ -97,29 +92,8 @@
           </select>
         </fieldset>
 
-        <!-- #region 
-            
-                <fieldset>
-                <legend>Contacto</legend>
-                <p>Como desea ser contactado</p>
-                <div class="forma-contacto">
-                <label for="telefono">Télefono:</label>
-                <input type="radio" name="contacto" value="telefono" id="telefono">
-
-                <label for="correo">Email:</label>
-                <input type="radio" name="contacto" value="correo" id="correo">
-                </div>
-                <p>Si eligió teléfono, elija fecha y hora</p>
-
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha">
-
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora">
-            </fieldset>
-            
-            -->
         <input type="submit" value="Enviar" class="boton boton-verde" />
+
       </form>
     </main>
 
