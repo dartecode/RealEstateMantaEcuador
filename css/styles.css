@@ -542,8 +542,9 @@ textarea{
 }
 
 .codig1{
-    display: block;
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cod{
