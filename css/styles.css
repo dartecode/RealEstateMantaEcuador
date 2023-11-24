@@ -487,10 +487,12 @@ textarea{
     float: right;
     top:2px;
     right: 10px;
+    font-size: 1.25rem;
 }
 .nume{
     text-decoration: none;
     color: antiquewhite;
+    font-size: 1.25rem;
 }
 
 .inf{
