@@ -540,3 +540,16 @@ textarea{
     margin-left: 30px;
     margin-top: -15px;
 }
+
+.codig1{
+    display: block;
+    margin-left: 25%;
+}
+
+.cod{
+    display: block;
+    max-width: 50%;
+    justify-items: center;
+    align-items: center;
+    font-style: italic;
+  }
