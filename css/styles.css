@@ -450,7 +450,6 @@ label{
     text-transform: uppercase;
     display: block;
 }
-input:not([type="submit"]),
 textarea,
 select{
     padding: 1rem;
@@ -460,10 +459,6 @@ select{
     margin-bottom: 2rem;
     border: none;
     border-radius: 1rem;
-}   
-input[type="radio"]{
-    width: auto;
-    margin: 0;
 }
 select{
     -webkit-appearance: none;
@@ -552,4 +547,4 @@ textarea{
     justify-items: center;
     align-items: center;
     font-style: italic;
-  }
+}

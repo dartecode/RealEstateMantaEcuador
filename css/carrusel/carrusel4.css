@@ -1,115 +1,117 @@
-.carru{
+
+label{cursor: pointer;}
+
+/* Contenedor para centrar */
+.ContainerCenter{
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+/* Input */
+input{display: none}
+
+
+/* Slider */
+.Carrusels{
+  max-width: 100%;
+  height: 700px;
+  width: 700px;
+  position: relative;
+  overflow-x: hidden;
+}
+.Carrusel{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  overflow-y: hidden;
+  transition: all .5s ease;
+}
+/* Estado 1 */
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(4) {transform: translate(300%, 0);}
+/* Estado 2 */
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(4) {transform: translate(200%, 0);}
+/* Estado 3 */
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(4) {transform: translate(100%, 0);}
+
+#Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-300%, 0);}
+#Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-200%, 0);}
+#Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(-100%, 0);}
+#Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(4) {transform: translate(0%, 0);}
+
+
+
+/* Flechas */
+.Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+  position: absolute;
+  height: 100%;
+  width: 2em;
+  align-items: center;
   justify-content: center;
+  display: none;
+  user-select: none;
 }
+.Carrusels .ArrowLeft{left: 0px;}
+.Carrusels .ArrowRight{right: 0px;}
+/* Configuracion de flechas individuales */
+#Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
+#Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
+#Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
+#Slider4:checked ~ .Carrusels .Arrow4{display: flex;}
 
-@charset "UTF-8";
-/* Aquí definimos las Custom properties */
-:root {
---negro: #393939;
---blanco: #ececec;
---sombra-ppal: #c9c9c9;
---sombra-sec: #ffffff;
---borde-negro: #00000050;
---marcado: rgb(127, 195, 255);
-/* Tipografía */
---tipo-principal: Helvetica, Arial, sans-serif;
+
+/* Selectores */
+.Selectors {
+  width: 120px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
-
-/* Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
-:root {
-  --negro: #ececec;
-  --blanco: #303030;
-  --sombra-ppal: #242424;
-  --sombra-sec: #3c3c3c;
-  --borde-negro: #FFFFFF50;
+.Selectors .Selector {
+  background-color: #000;
+  height: 15px;
+  width: 15px;
+  display: block;
+  border-radius: 10px;
 }
-}
-
-
-/* Configuramos si un usuario ha activado el modo alto contraste. (BETA) */
-/*
-  Estilos generales para que las etiquetas no contengan propiedades
-  que nos estorben y en todos los navegadores se vean correctamente
-*/
-
-video {
-max-width: 100%;
-width: 100%;
-display: block;
-object-fit: cover;
-object-position: center center;
-}
-
-li {
-list-style-type: none;
-}
-
-::selection {
-background-color: var(--negro);
-color: var(--blanco);
-}
-
-.carrousel {
-width: 90%;
-padding: 2em;
-
-transition: all 0.4s ease;
-
-border-radius: 1em;
-overflow: hidden;
-}
-
-.carrousel .grande {
-width: 400%;
-display: flex;
-flex-flow: row nowrap;
-justify-content: space-between;
-align-items: center;
-color: var(--negro);
-transition: all 0.4s ease;
-border-radius: 1em;
-padding: 2em;
-transition: all 0.5s ease;
-transform: translateX(0%);
-}
-
-.carrousel .img {
-width: calc( 100% / 4 - 4em);
-min-height: 10vh;
-transition: all 0.4s ease;
-border-radius: 1em;
-}
-
-.carrousel .puntos {
-width: 100%;
-margin: 1em 0 0;
-padding: 0.4em;
-display: flex;
-flex-flow: row nowrap;
-justify-content: center;
-align-items: center;
-}
-
-.carrousel .punto {
-width: 2em;
-height: 2em;
-margin: 1em 1em 0;
-color: var(--negro);
-transition: all 0.4s ease;
-border-radius: 1em;
-background-color: #333333;
-box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-}
-
-.carrousel .punto.activo {
-background-color: lightblue;
-}
+/* Condicionales para botón inferior */
+#Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: lightblue;}
+#Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: lightblue;}
+#Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: lightblue;}
+#Slider4:checked ~ .Selectors .Selector:nth-of-type(4) {background-color: lightblue;}
 
 @media (max-width: 768px) {
-.carrousel{
-  width: 100%;
+  /* Contenedor para centrar */
+.ContainerCenter{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Slider */
+.Carrusels{
+  max-width: 100%;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  overflow-x: hidden;
+}
+.Carrusel{
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  background-size: cover;
+  overflow-y: hidden;
+  transition: all .5s ease;
 }
 }

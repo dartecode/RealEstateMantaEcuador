@@ -1,0 +1,17 @@
+.animacion {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarDerecha{
+    animation: mostrarDerecha 1s;
+}
+
+@keyframes mostrarDerecha{
+    0% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

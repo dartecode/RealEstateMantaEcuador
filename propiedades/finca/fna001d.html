@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="../../css/normalize.css" />
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/carrusel/carrusel5.css" />
-    <script defer src="../../js/carrusel/app5.js"></script>
-
-    <link rel="stylesheet" href="../../css/social.css" />
+     <link rel="stylesheet" href="../../css/social.css" />
     <script
       src="https://kit.fontawesome.com/eb496ab1a0.js"
       crossorigin="anonymous"
@@ -48,44 +46,45 @@
     </header>
 
     <h1 class="fw-300 centrar-texto">Finca en venta</h1>
-    <div class="carru">
-      <div class="carrousel">
-        <div class="grande">
-          <img
-            src="../../img/propiedades/finca/fma001d/aerea.jpg"
-            alt="Vista aerea de finca en Sector la Sierrita"
-            class="img"
-          />
-          <img
-            src="../../img/propiedades/finca/fma001d/habitacion.jpg"
-            alt="Imagen 2"
-            class="img"
-          />
-          <img
-            src="../../img/propiedades/finca/fma001d/baño.jpg"
-            alt="Imagen 3"
-            class="img"
-          />
-          <img
-            src="../../img/propiedades/finca/fma001d/sala.jpg"
-            alt="Imagen 4"
-            class="img"
-          />
-          <img
-            src="../../img/propiedades/finca/fma001d/cocina.jpg"
-            alt="Imagen 5"
-            class="img"
-          />
-          <!--para agregar o quitar elemento del carrusel modificar: carrusel.css -casousel.grande width +100/-100 -carrousel.img width(+1/-1) js: position(calcular ej 1/4: *0.25*)-->
-        </div>
-
-        <ul class="puntos">
-          <li class="car punto activo"></li>
-          <li class="car punto"></li>
-          <li class="car punto"></li>
-          <li class="car punto"></li>
-          <li class="car punto"></li>
-        </ul>
+    
+    <div class="ContainerCenter">
+      <!-- Radio Seleccionar -->
+      <input type="radio" name="Carrusel" id="Slider1" checked>
+      <input type="radio" name="Carrusel" id="Slider2">
+      <input type="radio" name="Carrusel" id="Slider3">
+      <input type="radio" name="Carrusel" id="Slider4">
+      <input type="radio" name="Carrusel" id="Slider5">
+      
+      <div class="Carrusels">
+        <!-- Imagen contenido -->
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/finca/fma001d/aerea.jpg);"></div> 
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/finca/fma001d/habitacion.jpg);"></div>
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/finca/fma001d/baño.jpg);"></div>
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/finca/fma001d/sala.jpg);"></div>
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/finca/fma001d/cocina.jpg);"></div>
+        
+        <!-- Flechas a la izquierda por cada imagen -->
+        <label for="Slider5" class="ArrowLeft Arrow1">❮</label>
+        <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
+        <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
+        <label for="Slider3" class="ArrowLeft Arrow4">❮</label>
+        <label for="Slider4" class="ArrowLeft Arrow5">❮</label>
+      
+        <!-- Flechas a la derecha por cada imagen -->
+        <label for="Slider2" class="ArrowRight Arrow1">❯</label> 
+        <label for="Slider3" class="ArrowRight Arrow2">❯</label>
+        <label for="Slider4" class="ArrowRight Arrow3">❯</label>
+        <label for="Slider5" class="ArrowRight Arrow4">❯</label>
+        <label for="Slider1" class="ArrowRight Arrow5">❯</label>
+      </div>
+      
+      <!-- Selector circulos inferiores colgantes -->
+      <div class="Selectors">
+        <label for="Slider1" class="Selector"></label>
+        <label for="Slider2" class="Selector"></label>
+        <label for="Slider3" class="Selector"></label>
+        <label for="Slider4" class="Selector"></label>
+        <label for="Slider5" class="Selector"></label>
       </div>
     </div>
     <div class="codig1">

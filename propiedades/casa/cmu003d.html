@@ -18,8 +18,6 @@
       src="https://kit.fontawesome.com/eb496ab1a0.js"
       crossorigin="anonymous"
     ></script>
-
-    <script defer src="../../js/carrusel/app4.js"></script>
   </head>
   <body>
     <header class="site-header inicio">
@@ -48,23 +46,41 @@
     </header>
 
     <h1 class="fw-300 centrar-texto">Casa en venta</h1>
-    <div class="carru">
-      <div class="carrousel">
-        <div class="grande">
-          <img src="../../img/propiedades/casa/cmu003d/frente.jpg" alt="Frente de la casa" class="img" />
-          <img src="../../img/propiedades/casa/cmu003d/dentro.jpg" alt="Dentro de la casa" class="img" />
-          <img src="../../img/propiedades/casa/cmu003d/dormitorio.jpg" alt="dormitorio de la casa" class="img" />
-          <img src="../../img/propiedades/casa/cmu003d/baño.jpg" alt="Ba;o de la casa" class="img" />
-
-          <!--para agregar o quitar elemento del carrusel modificar: carrusel.css -casousel.grande width +100/-100 -carrousel.img width(+1/-1) js: position(calcular ej 1/4: *0.25*)-->
-        </div>
-
-        <ul class="puntos">
-          <li class="car punto activo"></li>
-          <li class="car punto"></li>
-          <li class="car punto"></li>
-          <li class="car punto"></li>
-        </ul>
+    <div class="ContainerCenter">
+      <!-- Radio Seleccionar -->
+      <input type="radio" name="Carrusel" id="Slider1" checked>
+      <input type="radio" name="Carrusel" id="Slider2">
+      <input type="radio" name="Carrusel" id="Slider3">
+      <input type="radio" name="Carrusel" id="Slider4">
+      
+      
+      <div class="Carrusels">
+        <!-- Imagen contenido -->
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/casa/cmu003d/frente.jpg);"></div> 
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/casa/cmu003d/dentro.jpg);"></div>
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/casa/cmu003d/dormitorio.jpg);"></div>
+        <div class="Carrusel" style="background-image: url(../../img/propiedades/casa/cmu003d/baño.jpg);"></div>
+        
+        
+        <!-- Flechas a la izquierda por cada imagen -->
+        <label for="Slider4" class="ArrowLeft Arrow1">❮</label>
+        <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
+        <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
+        <label for="Slider3" class="ArrowLeft Arrow4">❮</label>
+      
+        <!-- Flechas a la derecha por cada imagen -->
+        <label for="Slider2" class="ArrowRight Arrow1">❯</label> 
+        <label for="Slider3" class="ArrowRight Arrow2">❯</label>
+        <label for="Slider4" class="ArrowRight Arrow3">❯</label>
+        <label for="Slider1" class="ArrowRight Arrow4">❯</label>
+      </div>
+      
+      <!-- Selector circulos inferiores colgantes -->
+      <div class="Selectors">
+        <label for="Slider1" class="Selector"></label>
+        <label for="Slider2" class="Selector"></label>
+        <label for="Slider3" class="Selector"></label>
+        <label for="Slider4" class="Selector"></label>
       </div>
     </div>
 
