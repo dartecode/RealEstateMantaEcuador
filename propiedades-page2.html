@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Propiedades</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="img/White Modern Real Estate Logo.png" />
+
+    <link rel="stylesheet" href="./css/social.css" />
+    <script
+      src="https://kit.fontawesome.com/eb496ab1a0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="site-header inicio">
+      <div class="contenido-header">
+        <div class="menu container">
+          <a href="index.html">
+            <img src="img/Real Estate Logo.png" alt="Logotipo Bienes Raice" />
+          </a>
+          <input type="checkbox" id="menu" />
+          <label for="menu">
+            <img src="img/barras.svg" class="menu-icono" />
+          </label>
+          <nav class="navbar">
+            <ul>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="propiedades.html">Propiedades</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <br /><br /><br />
+      </div>
+    </header>
+    
+
+    <main class="seccion contenedor">
+      <h2 class="fw-300 centrar-texto">Casas y Departamentos en Venta</h2>
+
+      <!--barra de Busqueda (casa,terreno,finca)-->
+    <br />
+    <div class="busqueda">
+      <!--Tipo propiedad-->
+      <select
+        size="1"
+        onChange="window.open(this.options[this.selectedIndex].value,)"
+      >
+        <option disabled selected>Filtrar por:</option>
+        <option value="casas.html">Casas</option>
+        <option value="terrenos.html">Terrenos</option>
+        <option value="fincas.html">Fincas</option>
+      </select>
+    </div>     
+
+      <!-- Anuncios -->
+      <div class="contenedor-anuncios">
+
+        <div class="anuncio">
+            <a href="./propiedades/terreno/tmb001d.html">
+              <img
+                src="./img/propiedades/terreno/tmb001d/terreno.jpg"
+                alt="Frente de la casa, RealEstateMantaEcuador"
+              />
+            </a>
+  
+            <p class="codig">
+              <b>Código:</b> tmb001d<br /><b>Manta - Ecuador</b>
+            </p>
+            <div class="contenido-anuncio">
+              <h3>Terreno en venta en la ciudad de Manta</h3>
+              <p>Terreno ubicado en Costa Azul - Manta</p>
+              <p>Dimensión: 172,63 metros cuadrados</p>
+              <p class="precio">$14.000</p>
+              <div class="rede">
+                <a
+                  href="./propiedades/terreno/tmb001d.html"
+                  class="boton boton-amarillo d-block"
+                  >Ver propiedad</a
+                >
+                <a
+                  href="https://wa.me/+593994658800?text=Hola,%20acabo%20de%20ver%20el%20anuncio%20del%20terreno%20en%20venta%20en%20Costa%20Azul,%20Manta.%20Me%20podrías%20dar%20más%20información%20por%20favor."
+                  class="boton boton-verde d-block"
+                  target="_blank"
+                  >Whatsapp</a
+                >
+              </div>
+              <p class="codig1">
+                Denisse Arteaga: 0994658800 <br />Tania Velíz: 0980862985
+              </p>
+            </div>
+          </div>
+  
+          <div class="anuncio">
+            <a href="./propiedades/terreno/tpc001d.html">
+              <img
+                src="./img/propiedades/terreno/tpc001d/frente.jpg"
+                alt="Frente de la casa, RealEstateMantaEcuador"
+              />
+            </a>
+  
+            <p class="codig">
+              <b>Código:</b> tpc001d<br /><b>Portovejo - Ecuador</b>
+            </p>
+            <div class="contenido-anuncio">
+              <h3>Terreno en venta en Portoviejo</h3>
+              <p>Terreno ubicado en sector Santa Ana - Portoviejo</p>
+              <p>En el centro de Portoviejo</p>
+              <p class="precio">$14.000</p>
+              <div class="rede">
+                <a
+                  href="./propiedades/terreno/tpc001d.html"
+                  class="boton boton-amarillo d-block"
+                  >Ver propiedad</a
+                >
+                <a
+                  href="https://wa.me/+593994658800?text=Hola,%20acabo%20de%20ver%20el%20anuncio%20del%20terreno%20en%20venta%20en%20Portoviejo.%20Me%20podrías%20dar%20más%20información%20por%20favor."
+                  class="boton boton-verde d-block"
+                  target="_blank"
+                  >Whatsapp</a
+                >
+              </div>
+              <p class="codig1">
+                Denisse Arteaga: 0994658800 <br />Tania Velíz: 0980862985
+              </p>
+            </div>
+          </div>
+
+          
+
+        <!--Anuncio-->
+      </div>
+    </main>
+
+    <!-- Social Media Flotante -->
+
+    <div class="container-bar">
+      <input type="checkbox" id="btn-social" />
+      <label for="btn-social" class="fa fa-play"></label>
+      <div class="icon-social">
+        <a
+          href="https://www.facebook.com/denisse.arteaga.777"
+          target="_blank"
+          class="fa fa-facebook"
+        >
+          <span id="title">Denisse Artega</span>
+        </a>
+        <a
+          href="https://wa.me/+593994658800?text="
+          target="_blank"
+          class="fa fa-whatsapp"
+        >
+          <span id="title">Denisse Arteaga</span>
+        </a>
+        <a
+          href="mailto:hailiegus211@hotmail.com"
+          target="_blank"
+          class="fa fa-envelope"
+        >
+          <span id="title">Correo</span>
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100027728680017"
+          target="_blank"
+          class="fa fa-facebook"
+        >
+          <span id="title">Gustavo García</span>
+        </a>
+        <a
+          href="https://wa.me/+593959107975?text="
+          target="_blank"
+          class="fa fa-whatsapp"
+        >
+          <span id="title">Gustavo García</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="inf">
+      <div class="pagination">
+        <a href="propiedades.html" >&laquo;</a>
+        <a href="propiedades.html">1</a>
+        <a class="active" href="propiedades-page2.html">2</a>
+        <a href="#" class="not-active">&raquo;</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="index.html">
+              <img
+                src="img/Real Estate Logo.png"
+                alt="Logo de RealEstateMantaEcuador"
+              />
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>Sobre Nosotros</h2>
+          <p>Seriedad y responsabilidad en todo lo que hacemos.</p>
+          <p>
+            Realizamos su trámite con el BIESS, o el banco de su preferencia. Le
+            brindamos asesoría gratuita.
+          </p>
+          <p>Contamos con más de 10 años de experiencia</p>
+        </div>
+        <div class="box">
+          <h2>Contáctanos</h2>
+          <div class="red-social">
+            <a
+              href="https://www.facebook.com/denisse.arteaga.777"
+              class="fa fa-facebook"
+              target="_blank"
+            ></a>
+            <a
+              href="https://wa.me/+593994658800?text="
+              class="fa fa-whatsapp"
+              target="_blank"
+            ></a>
+            <a
+              href="mailto:hailiegus211@hotmail.com"
+              class="fa fa-envelope"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2023 <b>RealEstateMantaEcuador</b> - Todos los Derechos
+          Reservados</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>

@@ -214,8 +214,18 @@ margin: 1rem;
 .icono h3 {
     text-transform: uppercase;
 }
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contenedor-anuncios{
+    justify-content: left;
+}
+
 /*Anuncios */
-@media(min-width:768px){
+@media(max-width:768px){
     .contenedor-anuncios{
         display: flex;
         justify-content: space-between;
@@ -227,6 +237,7 @@ margin: 1rem;
     border: solid #b5b5b5 1px;
     background: #f5f5f5;
     margin-bottom: 2rem;
+    margin-right: 1rem;
 }
 @media(min-width:768px){
     .anuncio{
@@ -548,3 +559,27 @@ textarea{
     align-items: center;
     font-style: italic;
 }
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.not-active { 
+    pointer-events: none; 
+    cursor: default; 
+} 
+

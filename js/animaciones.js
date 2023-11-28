@@ -1,14 +1,20 @@
-let animado = document.querySelectorAll(".animacion");
+const animate = document.querySelectorAll('.animacion');
 
-function mostrarScroll() {
-    let scrollTop = document.documentElement.scrollTop;
-    for (var i = 0; i < animado.length; i++) {
-        let alturaAnimado = animado[i].offsetTop;
-        if (alturaAnimado -400 < scrollTop) {
-            animado[i].style.opacity = 1;
-            animado[i].classList.add("mostrarDerecha")
-        }
-    }
+function triggerAnimation(entries) {
+    entries.forEach(entry => {
+        const animar = entry.target.querySelector('div');
+        animar.classList.toggle('unset', entry.isIntersecting);
+    });
 }
 
-window.addEventListener('scroll', mostrarScroll);
+const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold : 0.25
+}
+
+const observer = new IntersectionObserver(triggerAnimation, options);
+
+animate.forEach(anima => {
+    observer.observe(anima);
+});
