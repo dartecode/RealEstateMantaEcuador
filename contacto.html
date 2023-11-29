@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/Casa.css">
+    <link rel="stylesheet" href="./css/animaciones.css" />
+
     <link rel="icon" href="img/White Modern Real Estate Logo.png" />
 
     <link rel="stylesheet" href="css/social.css" />
@@ -30,7 +32,7 @@
   <body>
     <header class="site-header inicio">
       <div class="contenido-header">
-        <div class="menu container">
+        <div class="menu">
           <a href="index.html">
             <img src="img/Real Estate Logo.png" alt="Logotipo Bienes Raice" />
           </a>
@@ -85,19 +87,8 @@
             type="tel"
             id="telefono"
             name="Telefono"
-            placeholder="Su numero de telefono"
+            placeholder="Su número de teléfono"
           />
-
-          <label for="mensaje">Mensaje:</label>
-          <textarea
-            id="mensaje"
-            name="Mensaje"
-            placeholder="Escriba su mensaje"
-          ></textarea>
-        </fieldset>
-
-        <fieldset>
-          <legend> <b> Información sobre Propiedad </b></legend>
 
           <label for="opciones">Venta o Compra</label>
           <select id="opciones" name="opciones">
@@ -106,25 +97,13 @@
             <option value="venta">Venta</option>
           </select>
 
-          <label for="codigo">Código de propiedad</label>
-          <input
-            type="text"
-            placeholder="Ingrese código"
-            name="codigo"
-            id="codigo"
-            disabled="disabled"
-          />
-
-          <label for="opcionesA">Asesora</label>
-          <select id="opcionesA" name="opcionesA" disabled="disabled">
-            <option value="" disabled selected>--Seleccione--</option>
-            <option value="Denisse Arteaga">
-              Denisse Arteaga - 0994658800
-            </option>
-            <option value="Laura García">Laura García - 0995348848</option>
-          </select>
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="Mensaje"
+            placeholder="Escriba su mensaje"
+          ></textarea>
         </fieldset>
-
         <input type="submit" value="Enviar" class="boton boton-verde" />
       </form>
     </main>
@@ -220,5 +199,8 @@
         >
       </div>
     </footer>
+
+    <script src="js/animaciones.js"></script>
+
   </body>
 </html>

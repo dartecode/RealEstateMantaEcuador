@@ -31,7 +31,7 @@
 }
 
 @media(max-width:768px){
-    .animacion2 {
+    .animacionTelefono {
         opacity: 0;
         transition: all 0.5s;
     }
