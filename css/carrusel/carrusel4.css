@@ -1,5 +1,6 @@
 
-label{cursor: pointer;}
+label{cursor: pointer;
+  font-size: 4rem;}
 
 /* Contenedor para centrar */
 .ContainerCenter{
@@ -90,6 +91,8 @@ input{display: none}
 #Slider4:checked ~ .Selectors .Selector:nth-of-type(4) {background-color: lightblue;}
 
 @media (max-width: 768px) {
+  label{cursor: pointer;
+    font-size: 3rem;}
   /* Contenedor para centrar */
 .ContainerCenter{
   max-width: 100%;

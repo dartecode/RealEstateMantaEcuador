@@ -96,7 +96,7 @@ margin: 1rem;
 /* Header */
 .site-header{
     background-color: #000000;
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0 6rem 0;
 }
 
 .contenido-header{
@@ -113,7 +113,7 @@ margin: 1rem;
 }
 .contenido-header img{
     margin-left: 30px;
-    height: 100px;
+    height: 150px;
 }
 .contenido-header h1{
     color: white;
@@ -240,6 +240,7 @@ margin: 1rem;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        max-width: 90%;
     }
 }
 
@@ -589,9 +590,8 @@ textarea{
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
-.pagination a:hover:not(.not-active){ 
+.not-active{ 
     pointer-events: none; 
-    cursor: default; 
-    background-color: #ddd;
+    cursor: default;
 } 
 
