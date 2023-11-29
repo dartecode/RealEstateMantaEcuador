@@ -46,6 +46,20 @@
 
     <main class="seccion contenedor">
       <h2 class="fw-300 centrar-texto">Fincas en Venta</h2>
+       <!--barra de Busqueda (casa,terreno,finca)-->
+    <br />
+    <div class="busqueda">
+      <!--Tipo propiedad-->
+      <select
+      onchange="document.location.href=this.value"
+      >
+        <option value="propiedades.html"> Todas las Propiedades</option>
+        <option value="casas.html">Casas</option>
+        <option value="terrenos.html">Terrenos</option>
+        <option disabled selected>Fincas</option>
+        
+      </select>
+    </div> 
 
       <div class="contenedor-anuncios">
         <div class="anuncio">

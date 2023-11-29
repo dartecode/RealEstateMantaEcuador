@@ -230,9 +230,7 @@ margin: 1rem;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.contenedor-anuncios{
-    justify-content: left;
-}
+
 
 /*Anuncios */
 @media(max-width:768px){
@@ -240,7 +238,6 @@ margin: 1rem;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        max-width: 90%;
     }
 }
 
@@ -248,7 +245,6 @@ margin: 1rem;
     border: solid #b5b5b5 1px;
     background: #f5f5f5;
     margin-bottom: 2rem;
-    margin-right: 1rem;
 }
 @media(min-width:768px){
     .anuncio{
@@ -532,7 +528,13 @@ textarea{
     font-size: 1.25rem;
 }
 
+.info1{
+    margin-right: 3rem;
+    
+    }
+
 .inf{
+    
     display: block;
     justify-content: center;
     align-items: center;
@@ -546,8 +548,21 @@ textarea{
     align-items: center;
     justify-content: center;
 }
-.info1{
+
+@media(max-width:768px){
+    .info1{
     margin-right: 3rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .info{
+        max-width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .codig{
