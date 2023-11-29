@@ -19,7 +19,7 @@ animate.forEach(anima => {
     observer.observe(anima);
 });
 
-let animado2 = document.querySelectorAll(".animacion2");
+let animado2 = document.querySelectorAll(".animacionTelefono");
 
 function mostrarScroll2() {
     let scrollTop = document.documentElement.scrollTop;
